@@ -9,11 +9,14 @@
         <el-menu-item index="1"
           ><router-link to="/myIndex/publicFileList"
             >公共文件管理
-          </router-link></el-menu-item
-        >
+          </router-link></el-menu-item>
 
         <el-menu-item index="2"
           ><router-link to="/myIndex/uploadFile">添加公共文件 </router-link>
+        </el-menu-item>
+
+        <el-menu-item index="3"
+        ><router-link to="/myIndex/publicFileTask">审核公共文件 </router-link>
         </el-menu-item>
       </el-menu>
     </div>

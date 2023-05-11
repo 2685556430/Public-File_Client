@@ -53,6 +53,26 @@
                   </div>
 
                   <div class="table-expand-info">
+                    <p class="table-expand-label">是否可见：</p>
+<!--                    <el-input-->
+<!--                        class="table-expand-value"-->
+<!--                        type="textarea"-->
+<!--                        :rows="2"-->
+<!--                        :auto-upload="false"-->
+<!--                        v-model="props.row.f_description"-->
+<!--                        :maxlength="2500"-->
+<!--                        show-word-limit-->
+<!--                    >-->
+<!--                    </el-input>-->
+                    <el-switch
+                        class="table-expand-value"
+                        v-model="props.row.visible"
+                        active-color="#13ce66"
+                        inactive-color="#ff4949">
+                    </el-switch>
+                  </div>
+
+                  <div class="table-expand-info">
                     <p class="table-expand-label">上传时间：</p>
                     <p class="table-expand-value">
                       {{ props.row.upload_date }}

@@ -3,7 +3,7 @@ import MyIndex from "@/components/MyIndex.vue";
 import VueRouter from "vue-router";
 import PublicFileList from "@/components/PublicFileList.vue";
 import UploadFile from "@/components/UploadFile.vue";
-import { Main } from "element-ui";
+import PublicFileTask from "@/components/PublicFileTask";
 
 export default new VueRouter({
   routes: [
@@ -38,6 +38,11 @@ export default new VueRouter({
           path: "uploadFile",
           component: UploadFile,
         },
+        {
+          name: "publicFileTask",
+          path: "publicFileTask",
+          component: PublicFileTask
+        }
       ],
     },
   ],

@@ -218,6 +218,8 @@ export default {
           index: index,
           count: this.page.size,
           search: this.search,
+          orderBy: 0,
+          col: '',
         },
       }).then((res) => {
         if (res.status === 200) {
